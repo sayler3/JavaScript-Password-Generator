@@ -16,29 +16,22 @@ if (length < 8 || length > 128 || isNaN(length)){
   spTrue = confirm("Would you like special charaters?");
   charsTrue = confirm("Would you like lowercase letters?");
   //chars.toUpperCaseTrue = confirm("Would you like uppercase letters?");
-
+  
   if (numTrue) { possibles.push(num)}
   if (spTrue) { possibles.push(sp)}
   if (charsTrue) { possibles.push(chars)}
   //if (chars.toUpperCaseTrue) { possibles.push(chars.toUpperCase)}
 }
 
-// function random(possibles){
-// let ran = Math.floor(Math.random() * possibles.length)
-// let dom = possibles[ran]
-// return dom;
-
-// console.log(possibles)
+//console.log(possibles)
 // console.log(ran)
 
  for (let i = 0; i < possibles.length; i++) {
    let ran = Math.floor(Math.random() * possibles[i].length)
-
-   if (length.length === )
-   console.log(possibles[i][ran])
+   console.log(possibles[i][ran]);
  }
+ 
 
-//console.log(possibles);
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
